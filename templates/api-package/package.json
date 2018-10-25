@@ -20,6 +20,12 @@
   },
   "dependencies": {
     "lsc": "https://github.com/LabShare/lsc",
-    "lss": "https://github.com/LabShare/lss"
-  }
+    "lss": "https://github.com/LabShare/lss",
+    "snyk": "^1.105.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
