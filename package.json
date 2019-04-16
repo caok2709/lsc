@@ -16,7 +16,9 @@
   "scripts": {
     "pretest": "node -e 'process.exit(0)'",
     "test": "jasmine-node --captureExceptions --color ./test/lib/unit",
-    "coverage": "istanbul cover jasmine-node ./test/lib/unit"
+    "coverage": "istanbul cover jasmine-node ./test/lib/unit",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "bin": {
     "lsc": "./lib/bin/lsc.js"
@@ -25,7 +27,7 @@
     "flatiron": "^0.4.2",
     "flatiron-cli-config": "^0.1.5",
     "glob": "^7.0.3",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-conflict": "^0.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-template": "^4.0.0",
@@ -34,7 +36,8 @@
     "lodash": "^4.12.0",
     "q": "^1.4.1",
     "underscore.string": "^3.3.4",
-    "yargs": "^4.3.2"
+    "yargs": "^4.3.2",
+    "snyk": "^1.151.0"
   },
   "devDependencies": {
     "istanbul": "^0.4.2",
@@ -44,5 +47,6 @@
     "promise-matchers": "^0.9.5",
     "proxyquire": "^1.4.0",
     "sinon": "^1.14.1"
-  }
+  },
+  "snyk": true
 }
