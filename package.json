@@ -61,7 +61,7 @@
     "flatiron-cli-config": "^0.1.5",
     "fluent-logger": "^3.0.0",
     "glob": "^7.1.1",
-    "gulp": "^4.0.0",
+    "gulp": "^5.0.0",
     "gulp-rename": "^1.2.3",
     "gulp-template": "^5.0.0",
     "i": "^0.3.6",
